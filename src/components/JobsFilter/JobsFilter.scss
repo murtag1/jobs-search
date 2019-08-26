@@ -1,0 +1,9 @@
+.jobs-filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-bottom: 15px;
+  }
+}

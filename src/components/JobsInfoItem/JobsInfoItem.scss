@@ -1,0 +1,43 @@
+.jobs-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+
+  &__left {
+    width: 70%;
+  }
+
+  &__right {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__title {
+    font-weight: bold;
+    color: #1d80be;
+    margin-bottom: 10px;
+  }
+
+  &__type, &__company {
+    display: inline-block;
+  }
+
+  &__company {
+    margin-right: 10px;
+  }
+
+  &__type {
+    color: #666;
+  }
+
+  &__location {
+    margin-bottom: 10px;
+  }
+}

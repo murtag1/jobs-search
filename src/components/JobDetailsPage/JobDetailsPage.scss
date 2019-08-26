@@ -1,0 +1,109 @@
+.job-info-page {
+  display: flex;
+  justify-content: center;
+
+  &__loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__inner {
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+
+    @media screen and (max-width: $tableWidth) {
+      width: 80%;
+      justify-content: center;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  &__left {
+    width: 68%;
+
+    @media screen and (max-width: $tableWidth) {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  &__right {
+    position: relative;
+    width: 28%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    @media screen and (max-width: $tableWidth) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  &__location, &__type {
+    margin-right: 15px;
+  }
+
+  &__title {
+    width: 100%;
+  }
+
+  &__description {
+    padding: 10px;
+    line-height: 18px;
+
+    ul {
+      @media screen and (max-width: $phoneWidth) {
+        padding-left: 15px;
+      }
+    }
+
+    p {
+      text-indent: 10px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-bottom: 5px;
+      line-height: 24px;
+    }
+  }
+
+  &__company {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__company-logo {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__company-url {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__how-to-apply-title {
+    font-weight: bold;
+  }
+}

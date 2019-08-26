@@ -1,0 +1,38 @@
+.filter-page {
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+
+    @media screen and (max-width: $tableWidth) {
+      width: 80%;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+      width: 95%;
+    }
+  }
+
+  &__left {
+    width: 35%;
+    margin-bottom: 20px;
+    @media screen and (max-width: $tableWidth) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    width: 60%;
+
+    @media screen and (max-width: $tableWidth) {
+      width: 100%;
+    }
+  }
+}
